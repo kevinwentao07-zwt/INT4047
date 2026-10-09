@@ -5,43 +5,60 @@ Status: Awaiting review
 Language: English  
 Chinese version: [简体中文](education-software-design.zh-CN.md)
 
-## 1. Document Scope
+# 1. Marketing Research
 
-This draft organises the product discussion provided by the user for design review. Established directions are distinguished from additional design proposals; proposals and open questions are not approved decisions. This document does not claim that any feature has been implemented or that illustrative scores represent actual student data.
+## Current Problems
 
-## 2. Product Positioning and Objectives
+- Many educational apps still mainly digitise traditional learning materials rather than provide a truly personalised learning experience.
+- Learning data is often collected, but students may not receive clear advice on what they should improve next.
+- Passive digital learning can reduce engagement. PISA 2022 reported that around 30% of students were distracted by digital devices in most or every mathematics lesson.
+- Learning, revision and study planning are often separated across different applications.
 
-The product supports students learning ICT by connecting learning content, conceptual understanding, practice, performance analysis and study planning into a continuously adapting learning system.
+## Existing Applications
 
-Core value proposition:
+### Quizlet
+- Strength: strong revision tools, flashcards and active recall.
+- Limitation: limited subject-specific visualisation.
 
-> Connect understanding, practice, weakness identification, planning and further learning into an adaptive ICT learning cycle.
+### Brilliant
+- Strength: strong interactive and visual learning.
+- Limitation: mainly focused on STEM subjects such as mathematics and programming rather than a complete ICT learning system.
 
-The product addresses three problems:
+### MyStudyLife
+- Strength: strong study planning and academic organisation.
+- Limitation: planning is mainly based on schedules and deadlines rather than detailed learning performance.
 
-- Students switch between videos, practice applications and planners, making it difficult to connect learning records with subsequent actions.
-- Students lack objective insight into their weaker topics and struggle to allocate study time effectively.
-- Definitions and static content alone can make abstract ICT concepts difficult to understand; students need representations of structures, relationships and changing processes.
+## Market Gap
 
-The specific curriculum, examination system, student age group and supported platforms remain open.
+Existing apps usually specialise in one part of the learning process.
 
-## 3. Established Learning Cycle
+**Opportunity:** combine visual learning, individual learning analysis and personalised study planning in one application.
 
-**Video → Concept Visualisation → Practice → Performance Analysis → AI Study Plan → Re-practice**
+# 2. Goals and Objectives
 
-```mermaid
-flowchart LR
-    V[Video learning] --> C[Concept visualisation]
-    C --> Q[Practice]
-    Q --> A[Performance analysis]
-    A --> P[AI study plan]
-    P --> L[Further learning following the plan]
-    L --> Q
-```
+## Goal
 
-The system uses new practice results to update recommendations and study time allocation. Modules need shared topic identifiers and learning records so that they form a connected workflow.
+To create a personalised ICT learning application that helps students understand difficult concepts and organise their learning more effectively.
 
-This is the core learning path. Whether students may skip videos, start with practice or change the sequence remains an interaction design decision.
+## Objectives
+
+### 1. Video-based Learning
+- Provide a short selected learning video before each topic.
+- Help students gain basic knowledge before further learning.
+
+### 2. 3D and Interactive Visualisation
+- Use 3D models and animations to explain abstract concepts.
+- Example: 3D computer hardware models and step-by-step programming execution.
+
+### 3. Individual AI Analysis
+- Analyse each student's learning performance.
+- Identify weak topics, repeated mistakes and areas that need improvement.
+
+### 4. AI-Personalised Study Plan
+- Generate a study plan based on learning performance, examination dates and available study time.
+- Adjust learning priorities as the student's performance changes.
+
+
 
 ## 4. Core Feature Design
 
